@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<title>Name Matching, Test 1</title>
+	<meta name="description" content="Test appliation for JavaScript name matching algorithm">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Christopher Stoll" lang="en">
+	<meta name="generator" content="Coda, and Sublime Text">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" />
+	<style type="text/css">
+		body{font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 10px;}
+		#search{font-size: 12px; margin:20px;}
+		#searchbox{width:220px;}
+		#examples{font-size: 12px;}
+		table.example td{width:20px; height:18px;}
+	</style>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="./nameMatch.js"></script>
+	<script type="text/javascript" src="./names.js"></script>
+	<script type="text/javascript">
+		/**
+		 * GLOBAL VARIABLES
+		 */
+		var nm = {},
+			resultArray = [];
+		
+		/**
+		 * Perform lookup when user clicks search
+		 *
+		 * @param {String} pName The string to lookup
+		 */
+		function findName(pName){
+			var tmpValue = 0,
+				tmpValRound = 0,
+				bestValue = 1,
+				resultLimit = 10,
+				dateStart = {},
+				dateEnd = {},
+				times = [];
+			
+			// clear globals
+			resultArray = [];
+			nm = new nameMatch(pName);
+			
+			// Emperical Analysis
+			//dateStart = new Date();
+			
+			// check against all names in the name list
+			for(var i=0; i<allNames.length; i++){
+				tmpValue = nm.score(allNames[i]);
+				tmpValRound = String(Math.round(tmpValue * 100) / 1000);
+				
+				// add selected names to drop-down list
+				// does unnecessary work, refactor to improve speed
+				if(tmpValue > bestValue){
+					resultArray.push(tmpValRound + ' - ' + allNames[i]);
+					resultArray.sort();
+					resultArray.reverse()
+					resultArray = resultArray.slice(0, resultLimit);
+				}
+			}
+			
+			// Emperical Analysis
+			//dateEnd = new Date();
+			//timeElapsed = dateEnd.getTime() - dateStart.getTime();
+			//console.log(timeElapsed);
+				
+			return resultArray;
+		}
+		
+		/**
+		 * Defer until page is loaded
+		 */
+		$(document).ready(function(){
+			$("#searchbox").autocomplete({
+				minLength: 3,
+				source: function(request, response) {
+					response(
+						findName(request.term)
+					);
+				}
+			});
+			
+			/*
+			var runningTotal = 0,
+				minLength = 29,
+				maxLength = 0;
+			for(var i=0; i<allNames.length; i++){
+				runningTotal += allNames[i].length;
+				if(allNames[i].length > maxLength){
+					maxLength = allNames[i].length;
+				}
+				if(allNames[i].length < minLength){
+					minLength = allNames[i].length;
+				}
+			}
+			console.log(runningTotal/allNames.length);
+			console.log(maxLength);
+			console.log(minLength);
+			*/
+		});
+	</script>
+</head><body>
+	<div id="search">
+	Search for name: <input id="searchbox" /><br />
+	(at least three characters are required)
+	</div>
+	<div id="examples">
+	<p>Examples:<ul>
+		<li>Chris Stol &raquo; Christopher Stoll (nick name, missing final character)</li>
+		<li>Chris Stll &raquo; Christopher Stoll (nick name, missing internal character</li>
+		<li>Chris Stoll &raquo; Christopher Stoll (nick name)</li>
+		<li>Chirs Stoll &raquo; Christopher Stoll (nick name, transposed characters</li>
+		<li>Chris Stall &raquo; Christopher Stoll (nick name, misspelling)</li>
+		<li>Chris Stahl &raquo; Christopher Stoll (nick name, phonetic misspelling</li>
+		<li>Chris Stolls &raquo; Christopher Stoll (nick name, additional final character)</li>
+		<li>Stoll, Chris &raquo; Christopher Stoll (first/last order, nick name)</li>
+		<li>Stoll, Christ &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
+		<li>Stoll, Christo &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
+		<li>Stoll, Christop &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
+		<li>Stoll, Christoph &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
+		<li>Stoll, Christophe &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
+		<li>Ashi Upal &raquo; Ashwani Uppal (nick name)</li>
+		<li>Tom Miller &raquo; Thomas Miller (nick name)</li>
+		<li>Jake Lorenz &raquo; Joachim Lorenz (nick name, Anglicized name)</li>
+		<li>Penny Fang &raquo; Ping Fang (nick name, Anglicized name)</li>
+		<li>Pepe Cruz &raquo; Jose Cruz Espinosa (nick name, Anglicized name)</li>
+		<li>4pp13 &raquo; RW Apple Jr, etc. (Leet-speek example)</li>
+		<li>showcat</li>
+		<li>steef yobs</li>
+		<li>alisan kramavic</li>
+		<li>hanspeater brooder</li>
+	</ul></p>
+	</div>
+	<div id="test_table"></div>
+</body>

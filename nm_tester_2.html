@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<title>Name Matching, Test 2</title>
+	<meta name="description" content="Test appliation for JavaScript name matching algorithm">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Christopher Stoll" lang="en">
+	<meta name="generator" content="Coda, and Sublime Text">
+	<style type="text/css">
+		body{font-size: 10px; font-family: "Lucida Grande", Verdana, Arial, sans-serif;}
+		table.example td{width:20px;height:18px;}
+	</style>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="./nameMatch.js"></script>
+	<script type="text/javascript">
+		var nm = {};
+		$(document).ready(function(){
+			$('#searchdo').click(function(){
+				if($('#searchboxa').val() && $('#searchboxb').val()){
+					$('#test_table').html('');
+					nm = new nameMatch($('#searchboxa').val(), true, '#test_table');
+					nm.score($('#searchboxb').val());
+				}
+			});
+		});
+	</script>
+</head><body>
+	<input id="searchboxa" value="Robert Alton Brown" />
+	<input id="searchboxb" value="Rob Alton Brwon" />
+	<input id="searchdo" type="submit" />
+	<div id="test_table"></div>
+</body>
