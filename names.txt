@@ -29,6 +29,461 @@ Lucy Liu
 Lucy Lu
 Lucy Loo
 Lucky Lew Langston
+Phil Hartman
+Joe Mantegna*
+Frank Welker
+Maurice LaMarche
+Kelsey Grammer
+Kevin Michael Richardson
+Jon Lovitz
+Jane Kaczmarek
+Albert Brooks
+Jan Hooks
+Jackie Mason
+Michael Carrington
+Glenn Close
+Stephen Hawking
+Eric Idle
+Charles Napier
+George Takei
+Gary Coleman
+Zooey Deschanel
+Danny DeVito
+Anne Hathaway
+James Earl Jones
+John Kassir
+Stacy Keach
+Joan Kenley
+Julia Louis-Dreyfus
+Pamela Reed
+Alex Rocco
+Sab Shimono
+Sally Stevens
+Kiefer Sutherland
+Scott Thompson
+Michael Jackson
+Albert Einstein
+William Shakespeare
+Leonardo Da Vinci
+Abraham Lincoln
+John F. Kennedy
+Walt Disney
+Martin Luther King
+Elvis Presley
+Mozart
+Michael Jordan
+Napoleon
+Benjamin Franklin
+Marilyn Monroe
+Cleopatra
+John Lennon
+Christopher Columbus
+Tom Hanks
+Michelangelo
+Princess Diana
+Neil Armstrong
+Thomas Jefferson
+Mohammad Ali
+George W. Bush
+Thomas Edison
+Ludwig van Beethoven
+Isaac Newton
+Gandhi
+Paul McCartney
+Bill Gates
+Pablo Piccaso
+George Washington
+Oprah Winfrey
+Tom Cruise
+Mother Teresa
+Bob Dylan
+John F. Kennedy, Jr.
+Elizabeth Taylor
+Madonna
+Ronald Reagan
+Eddie Murphy
+Aristotle
+Britney Spears
+Clint Eastwood
+Vincent Van Gogh
+Stephen Hawking
+Bill Clinton
+Mark Twain
+Mick Jagger
+Harrison Ford
+Jim Carrey
+Spider Man
+Hillary Clinton
+Charlie Brown
+Alfred Hitchcock
+Houdini
+Darth Vader
+Charles Dickens
+Dr. Seuss
+Vladimir Putin
+John Travolta
+Alexander Graham Bell
+Robin Williams
+Ray Charles
+Sean Connery
+Justin Timberlake
+Bill Cosby
+Margaret Thatcher
+Beyonce
+Michael J. Fox
+Dwight D. Eisenhower
+Plato
+Denzel Washington
+Edgar Allen Poe
+Pele
+Jack Nicholson
+Helen Keller
+Kanye West
+Whoopi Goldberg
+David Letterman
+Steve Martin
+James Dean
+Magic Johnson
+Julia Roberts
+Paul Newman
+Pamela Anderson
+Lucille Ball
+Sigmund Freud
+Jesse Jackson
+Lewis Carrol
+Ernest Hemingway
+Jacqueline Kennedy Onasis
+Chevy Chase
+Jessica Simpson
+Fred Astaire
+Michael Landon
+Bob Hope
+James Taylor
+Steve Irwin
+Tyra Banks
+Meryl Streep
+Neil Diamond
+C. S. Lewis
+Mr. Rogers
+Miles Davis
+Howard Stern
+Keith Richards
+Louis Pasteur
+Willey Mays
+Norman Rockwell
+Andy Rooney
+Henry A. Kissinger
+Jane Austen
+Anna Nicole Smith
+Sigourney Weaver
+Frank Lloyd Wright
+Hank Aaron
+Roy Rogers
+Andy Griffith
+Peyton Manning
+Benny Goodman
+Billy Crystal
+Carrie Fisher
+Mae West
+Jimmy Connors
+Weird Al Yankovic
+Chuck Yeager
+Paul Harvey
+Carl Sagan
+John Candy
+George Carlin
+Michele Pfeiffer
+Walter Cronkite
+William F. Buckley, Jr.
+Ashley Simpson
+Susan B. Anthony
+Alicia Silverstone
+Terry Bradshaw
+Yogi Berra
+Danny Glover
+Colin L. Powell
+Julia Child
+Phil Donahue
+Henri Mancini
+Nathaniel Hawthorne
+Tommy Lee
+Bob Newhart
+Peter Jennings
+Shirley MacLaine
+Bill Hicks
+Carol Burnett
+Elizabeth Dole
+Tom Brokaw
+Dan Aykroyd
+Borat
+W.C. Fields
+Liberace
+Norman Schwarzkopf
+Ross Perot
+Gloria Steinem
+Newt Gingrich
+Arthur Ashe
+Marilyn Vos Savant
+Charles Everett Koop
+Dan Rather
+C. G. Jung
+George Bancroft
+Brigham Young
+Victor Hugo
+Ralph Waldo Emerson
+George Sand
+William Lloyd Garrison
+John Stuart Mill
+Louis Agassiz
+Napoleon III
+Abraham Lincoln
+Leo XIII
+Horace Greeley
+Charles Dickens
+Henry Ward Beecher
+Charles Reade
+Anthony Trollope
+Russell Sage
+Henry David Thoreau
+Karl Marx
+George Eliot
+Herbert Spencer
+Mary Baker Eddy
+Matthew Arnold
+Goldwin Smith
+Stonewall Jackson
+Bayard Taylor
+Walter Bagehot
+Charles Eliot Norton
+George Meredith
+Carl Schurz
+Emily Dickinson
+Sitting Bull
+Leslie Stephen
+Edwin Booth
+William Morris
+Mark Twain
+Bret Harte
+Grover Cleveland
+John Morley
+Henry George
+Crazy Horse
+Edward VII
+Alfred Marshall
+Henry James
+Anatole France
+Elihu Root
+Buffalo Bill
+Ellen Terry
+Grant Allen
+Edmund Gosse
+Robert Louis Stevenson
+Oliver Lodge
+Brander Matthews
+Cecil Rhodes
+Oscar Wilde
+Josiah Royce
+Woodrow Wilson
+Pius XI
+Theodore Roosevelt
+John Dewey
+Jane Addams
+Rabindranath Tagore
+Edward Grey
+David Lloyd George
+Max Weber
+Rudyard Kipling
+Ramsay MacDonald
+Arnold Bennett
+William Allen White
+Andre Gide
+Frank Norris
+Cordell Hull
+Sri Aurobindo
+Al Smith
+Winston Churchill
+Thomas Mann
+Piux XII
+Isadora Duncan
+Carl Sandburg
+Albert Einstein
+Douglas MacArthur
+Pierre Teilhard de Chardin
+Virginia Woolf
+William Carlos Williams
+Harry Truman
+Ezra Pound
+Van Wyck Brooks
+Rupert Brooke
+John Foster Dulles
+Jawaharlal Nehru
+Ho Chi Minh
+Hu Shih
+Reinhold Niebuhr
+Mao Zedong
+Aldous Huxley
+George VI
+John Dos Passos
+William Faulkner
+Gunnar Myrdal
+Ernest Hemingway
+Adlai Stevenson
+Margaret Mead
+Talcott Parsons
+George Orwell
+Deng Xiaoping
+Jean-Paul Sartre
+Hannah Arendt
+Laurence Olivier
+Lyndon Johnson
+Barry Goldwater
+Mother Teresa
+Ronald Reagan
+Milton Friedman
+Richard Nixon
+Dylan Thomas
+Roland Barthes
+Benjamin Franklin
+Martin Luther King Jr.
+Babe Ruth
+Albert Einstein
+Mark Twain
+Billy Graham
+Elvis Presley
+Lewis & Clark
+Louis Armstrong
+Charles Lindbergh
+William Shakespeare
+Abraham Lincoln
+George Washington
+Adolf Hitler
+Aristotle
+Alexander the Great
+Thomas Jefferson
+Henry VIII of England
+Charles Darwin
+Elizabeth I of England
+Karl Marx
+Julius Caesar
+Queen Victoria
+Martin Luther
+Joseph Stalin
+Albert Einstein
+Christopher Columbus
+Isaac Newton
+Charlemagne
+Theodore Roosevelt
+Wolfgang Amadeus Mozart
+Plato
+Louis XIV of France
+Ludwig van Beethoven
+Ulysses S. Grant
+Leonardo da Vinci
+Augustus
+Carl Linnaeus
+Ronald Reagan
+Charles Dickens
+Paul the Apostle
+Benjamin Franklin
+George W. Bush
+Winston Churchill
+Genghis Khan
+Charles I of England
+Thomas Edison
+James I of England
+Friedrich Nietzsche
+Franklin D. Roosevelt
+Sigmund Freud
+Alexander Hamilton
+Mohandas Karamchand Gandhi
+Woodrow Wilson
+Johann Sebastian Bach
+Galileo Galilei
+Oliver Cromwell
+James Madison
+Gautama Buddha
+Mark Twain
+Edgar Allan Poe
+Joseph Smith, Jr.
+Adam Smith
+David, King of Israel
+George III of the United Kingdom
+Immanuel Kant
+James Cook
+John Adams
+Richard Wagner
+Pyotr Ilyich Tchaikovsky
+Voltaire
+Saint Peter
+Andrew Jackson
+Constantine the Great
+Socrates
+Elvis Presley
+William the Conqueror
+John F. Kennedy
+Augustine of Hippo
+Vincent van Gogh
+Nicolaus Copernicus
+Vladimir Lenin
+Robert E. Lee
+Oscar Wilde
+Charles II of England
+Cicero
+Jean-Jacques Rousseau
+Francis Bacon
+Richard Nixon
+Louis XVI of France
+Charles V, Holy Roman Emperor
+King Arthur
+Michelangelo
+Philip II of Spain
+Johann Wolfgang von Goethe
+Ali, founder of Sufism
+Thomas Aquinas
+Pope John Paul II
+René Descartes
+Nikola Tesla
+Harry S. Truman
+Joan of Arc
+Dante Alighieri
+Otto von Bismarck
+Grover Cleveland
+John Calvin
+John Locke
+C. Wright Mills
+Indira Gandhi
+Billy Graham
+Daniel Bell
+Irving Howe
+Raymond Williams
+George McGovern
+Henry Kissinger
+Jimmy Carter
+Robert Kennedy
+Fidel Castro
+Gabriel Garcia Marquez
+Che Guevara
+Martin Luther King Jr.
+Jacques Derrida
+Mikhail Gorbachev
+Sylvia Plath
+Susan Sontag
+Ralph Nader
+Elvis Presley
+Carol Gilligan
+Saddam Hussein
+Anthony Giddens
+Lee Harvey Oswald
+John Lennon
+Bob Dylan
+Barbra Streisand
+Terry Eagleton
+Rajiv Gandhi
+Daniel Ortega
+Bill Clinton
+Salman Rushdie
+Clarence Thomas
+Nawaz Sharif
 Beth Wells
 Mario Banks
 Marguerita Conti
@@ -212,6 +667,7 @@ Kirk Andrews
 Andre Sanders
 Daniel Watson
 Mandy Bauer
+Don Vito Corleone
 Deepika Singh
 Luanna Mckendrick
 Lizette Torres
@@ -221,6 +677,7 @@ Clarissa Lawver
 Lindsey Porter
 Marie Miles
 Norma Lee
+George Bailey
 Benazir Bhutto
 Li Ming
 Nick Ruiz
@@ -244,6 +701,7 @@ Vickie Schneider
 Joseph Stalin
 Sophia Meister
 Clive Toke
+Rhett Butler
 Brad Pitt
 Guillermo Hodges
 Faith Hale
@@ -320,6 +778,7 @@ Adolf Adkins
 Steffen Gonzalez
 Luis Jackson
 Ankur Jhadav
+Ben Obi-Wan Kenobi
 Mao Zedong
 Sophia Hughes
 Arica Sprouse
@@ -442,6 +901,7 @@ Lin Hickey
 Glenna Watson
 Zhang Richards
 Theodore Torbett
+Atticus Finch
 Katharina Horton
 Sandra Francis
 Michael Jackson
@@ -460,12 +920,14 @@ Lilliam Tierney
 Hubert Baldwin
 Marguerite Stevens
 Kristine Jacobs
+Indiana Jones
 Howard Schäfer
 Ariane Schreckengost
 Olga Wells
 Sarah Fang
 Wang Juan
 Joycelyn Pankhurst
+Tony Stark
 Oma Demers
 Li Yong
 Tim Peterson
@@ -480,6 +942,7 @@ Jeffie Li
 Roberta Wagner
 Daniela Thomas
 Lin Landry
+Tarence Williams
 Trent Clark
 Emmeline Johnson
 Carmen Bastin
@@ -498,6 +961,7 @@ Marianne Raybould
 Shruti Yousafzai
 Christin Weber
 Ira Lamb
+Forrest Gump
 Lady Gaga
 Andreas Schmidt
 Willard Ortega
@@ -683,6 +1147,7 @@ Jeffrey Hernandez
 Hannah Daniel
 Carl Becker
 Wang Sen
+Norman Bates
 Teri Olson
 Leon Moritz
 Ivette Isaacs
@@ -692,6 +1157,7 @@ Pope Durkin
 Faye Robinson
 Scarlet Singh
 Lynne Li
+Ben Olson
 Pria Qiang
 Vic Sandblom
 Benjamin Gonzalez
@@ -850,6 +1316,7 @@ Theodore Baer
 Claudia Schneider
 Lena Wagner
 Phil Meup
+James Bond
 Rosa Parks
 Shreya Antoinette
 Jaymes Black
@@ -862,6 +1329,7 @@ Spencer Sutton
 Kylie Biermann
 Geneva Salazar
 Jon Stewart
+Han Solo
 Sebastian Ehrlichmann
 Daysi Shambaugh
 Gladys Kendig
@@ -977,6 +1445,7 @@ Florrie Mckennon
 Hattie Bradley
 Diana Papst
 Ines Ritter
+Dr. Hannibal Lecter
 Tatum Barton
 Li Churchill
 Beth Horton
@@ -1068,10 +1537,58 @@ Claude Rose
 Diedra Min
 Norma Cook
 George Clooney
+Harry Potter
+Atticus Finch
+Indiana Jones
+James Bond
+Rick Blaine
+Will Kane
+Clarice Starling
+Rocky Balboa
+Ellen Ripley
+George Bailey
+T. E. Lawrence
+Jefferson Smith
+Tom Joad
+Oskar Schindler
+Han Solo
+Norma Rae Webster
+Harry Callahan
+Robin Hood
+Virgil Tibbs
+Butch Cassidy
+the Sundance Kid
+Robert Redford
+Mahatma Gandhi
+Spartacus
+Terry Malloy
+Thelma Dickinson
+Louise Sawyer
+Lou Gehrig
+Bob Woodward
+Carl Bernstein
+Dustin Hoffman
+General George Patton
+Luke Jackson
+Erin Brockovich
+Philip Marlowe
+Bonnie Parker
+Marge Gunderson
+Alvin C. York
+Rooster Cogburn
+Frank Serpico
+Arthur Chipping
+Father Edward
+Jimmy "Popeye" Doyle
+Karen Silkwood
+Terminator
+Andrew Beckett
+Maximus Decimus Meridius
 Dung Croce
 Hildred Baca
 Albert Lee
 Beatrice Swanson
+Tyler Durden
 Denisse Dahlgren
 Ora Garrett
 Anja Eoff
@@ -1171,6 +1688,7 @@ Corinna Langston
 Dalia Jaiteley
 Wang Chao
 Harriet Mack
+Harry Callahan
 Franklyn Hari
 Marie Koch
 Zhang Krantz
@@ -1283,6 +1801,7 @@ Howard Roberts
 Terry Walters
 Christopher Bieber
 Frank Wolf
+Clark Kent
 Arjun Bhatnagar
 Stephania Patterson
 Taylor Flowers
@@ -1308,6 +1827,8 @@ Birgit Greene
 Scarlett Jing
 Ronald Peterson
 Max Bieber
+Travis Bickle
+Tony Montana
 Lillian Holoman
 Katja Zimmermann
 Zhang Jie
@@ -1328,6 +1849,7 @@ Terry Nunes
 Stephania Wentzel
 Rachel James
 Olga Rothschild
+Oskar Schindler
 Tyler Greene
 Carolyn Gonzales
 Ed Salazar
@@ -1340,6 +1862,7 @@ Kristia Hatch
 Phillip Cox
 Liu Jie
 Ralf Piefer
+Jack Sparrow
 Virgie Leininger
 Marko Furr
 Carolynn Torres
@@ -1466,6 +1989,7 @@ Madonna
 Tansy Rodacker
 Lyle Scott
 Henry Ford
+Jimmy Doyle
 Munroe Kalp
 Anna Li
 Geneva Smith
@@ -1596,6 +2120,7 @@ Dennis Wagner
 Lucilla Bills
 Ludwig Leininger
 Rhonda Fitzgerald
+Jeffrey Lebowski 
 Tanya Ross
 Jan Schröder
 Teresa Harris
@@ -1639,6 +2164,7 @@ Horace Warren
 Marvin Anderson
 Maik Stoll
 Ursula Fryer
+Jacques Clouseau
 Annett Schulze
 Liu Waechter
 Elizabeth Gonzales
@@ -1724,6 +2250,7 @@ Lydia Gregory
 Imogene Penix
 Emeline Chopra
 Manuela Martinez
+River Pheonix
 Anjali Jhadav
 Ray Abend
 Latarsha Livingston
@@ -1736,6 +2263,7 @@ Betty Weldy
 Christopher Columbus
 Benjamin Lee
 Holden Birdsall
+Joe Montana
 Julius Mcbride
 Christian Weber
 Renee Hubbard
@@ -1807,6 +2335,7 @@ Anne Trotman
 Natasha Patrick
 Thora King
 Mireille Amos
+Rick Blaine
 Georgiana Mukopadhyay
 Jayna Hoag
 Anshul Dasgupta
@@ -1943,6 +2472,7 @@ Haile Selassie
 Karen Sanders
 Emily Buttermore
 Ernest Hemingway
+Mad Max Rockatansky
 Diane Dively
 Jackie Schwartz
 Shane Sengupta
@@ -1978,6 +2508,7 @@ Kristin Kerner
 Juliane Lewis
 Andre Pabst
 Andrew Scott
+Jack Torrance
 Swen Frueh
 Kunan Maldonado
 Christopher Beethoven
@@ -1998,3 +2529,895 @@ Thomas Christensen
 Norma Colon
 Ralph Holt Jr.
 Oscar Jones
+Sam McMurray
+Ron Taylor
+Albert Brooks
+Albert Brooks
+Sam McMurray
+Kelsey Grammer
+June Foray
+Penny Marshall
+Paul Willson
+Harvey Fierstein
+James Earl Jones
+Serak the Preparer
+Tony Bennett
+Daryl Coley
+Ken Levine
+Tom Poston
+Greg Berg
+Alex Rocco
+Phil Hartman
+Larry King
+Joey Miyashima
+Sab Shimono
+George Takei
+Diane Tanaka
+Jon Lovitz
+Mr. Seckofsky
+Phil Hartman
+Cable guy
+Danny DeVito
+Tracey Ullman
+Frank Welker
+Phil Hartman
+Audrey Meadows
+Jon Lovitz
+Ringo Starr
+Dustin Hoffman
+Cloris Leachman
+Daniel Stern
+Michael Jackson
+Kipp Lennon
+Lona Williams
+Neil Patrick Harris
+Phil Hartman
+Troy McClure
+Mobster
+Joe Mantegna
+Chick Hearn
+Magic Johnson
+Jon Lovitz
+Jackie Mason
+Frank Welker
+Phil Hartman
+Larry McKay
+Aerosmith
+Phil Hartman
+Phil Hartman
+Stockbroker
+Sting
+Phil Hartman
+Smooth Jimmy Apollo
+Phil Hartman
+Wade Boggs
+Jose Canseco
+Roger Clemens
+Terry Cashman
+Ken Griffey, Jr.
+Don Mattingly
+Steve Sax
+Mike Scioscia
+Ozzie Smith
+Darryl Strawberry
+Steve Allen
+Frank Welker
+Beverly D'Angelo
+Kelsey Grammer
+Christopher Guest
+Michael McKean
+Phil Hartman
+Kimmy Robertson
+Danny DeVito
+Joe Frazier
+Phil Hartman
+Lionel Hutz
+Jon Lovitz
+Ms. Sinclair
+Bob Hope
+Lona Williams
+Phil Hartman
+Lionel Hutz
+Tom Jones
+Sara Gilbert
+Phil Hartman
+Pamela Reed
+Phil Hartman
+Linda Ronstadt
+Adam West
+Elizabeth Taylor
+Phil Hartman
+Leonard Nimoy
+Phil Hartman
+Phil Hartman
+Mr. Muntz
+Michael Carrington
+Phil Hartman
+Lionel Hutz
+Joyce Brothers
+Brooke Shields
+Barry White
+David Crosby
+Phil Hartman
+Lionel Hutz
+Johnny Carson
+Hugh Hefner
+Bette Midler
+Luke Perry
+Elizabeth Taylor
+Barry White
+David Crosby
+The Dapper Dans
+George Harrison
+Kelsey Grammer
+Ramones
+Phil Hartman
+Frank Welker
+George Fenneman
+Phil Hartman
+Lionel Hutz
+Pamela Reed
+Albert Brooks
+James Brown
+Phil Hartman
+Ernest Borgnine
+Phil Hartman
+Werner Klemperer
+Michelle Pfeiffer
+Gerry Cooney
+Robert Goulet
+Sam Neill
+Conan O'Brien
+Michael Carrington
+James Woods
+Kathleen Turner
+Buzz Aldrin
+James Taylor
+Frank Welker
+Phil Hartman
+Frank Welker
+Phil Hartman
+Phil Hartman
+Phil Hartman
+Winona Ryder
+Henry Corden
+Dr. Demento
+Kelsey Grammer
+Phil Hartman
+Larry King
+James Earl Jones
+Meryl Streep
+Dennis Franz
+Phil Hartman
+Anne Bancroft
+Ted Danson
+Woody Harrelson
+John Ratzenberger
+Rhea Perlman
+George Wendt
+Patrick Stewart
+Dick Cavett
+Joe Mantegna
+Johnny Unitas
+Phil Hartman
+Mel Brooks
+Susan Sarandon
+Phil Hartman
+Maurice LaMarche
+Jon Lovitz
+Phil Hartman
+Mandy Patinkin
+Frank Welker
+Various dogs
+Steve Allen
+Phil Hartman
+Ron Taylor
+Phil Hartman
+Tito Puente
+Tito Puente
+Phil Hartman
+Mickey Rooney
+Joan Kenley
+Frank Welker
+Phil Hartman
+Linda McCartney
+Paul McCartney
+Paul Anka
+Joan Kenley
+Glenn Close
+Harry Morgan
+R. Lee Ermey
+Kelsey Grammer
+Phil Hartman
+Lionel Hutz
+Phil Hartman
+Lawrence Tierney
+Tom Kite
+Phil Hartman
+Bob Newhart
+Phil Hartman
+Donald Sutherland
+Kirk Douglas
+Phil Hartman
+Alex Rocco
+Jack Sheldon
+Suzanne Somers
+Jeff Goldblum
+Phil Hartman
+Jim Lau
+Phil Hartman
+Hospital chairman
+Joe Mantegna
+Cypress Hill
+Peter Frampton
+Sonic Youth
+Christina Ricci
+Phil Hartman
+Albert Brooks
+Sally Stevens
+Michael Buffer
+Sally Stevens
+Paul Winfield
+Rodney Dangerfield
+Jon Lovitz
+Johnny Cash
+Gillian Anderson
+David Duchovny
+Leonard Nimoy
+Joe Mantegna
+Jack Lemmon
+Phil Hartman
+Alex Rocco
+John Waters
+Kelsey Grammer
+David Hyde Pierce
+Man in the crowd
+Joe Mantegna
+Dave Thomas
+Frank Welker
+Bret Hart
+Denice Kumagai
+Karen Maruyama
+Sab Shimono
+Gedde Watanabe
+Frank Welker
+Frank Welker
+Tim Conway
+Phil Hartman
+Gailard Sartain
+Willem Dafoe
+Michael Dees
+Joan Kenley
+Martin Sheen
+Fyvush Finkel
+Roy Firestone
+Mike Judge
+Joe Namath
+Jan Hooks
+Andrea Martin
+Stephen Jay Gould
+Phil Hartman
+Phil Hartman
+Alex Trebek
+Jim Varney
+Phil Hartman
+James Earl Jones
+Jack Ong
+Bruce Baum
+Janeane Garofalo
+Bobcat Goldthwait
+Jay Leno
+Hank Williams, Jr.
+Steven Wright
+Helen Hunt
+Phil Hartman
+Phil Hartman
+Michael Carrington
+Bob Denver
+Rod Steiger
+Paul Winfield
+Steve Martin
+Paul McGuinness
+Susie Smith
+Brendan Fraser
+Steven Weber
+Lisa Kudrow
+William Daniels
+Phil Hartman
+Robert Englund
+Kathie Lee Gifford
+Ed McMahon
+Regis Philbin
+Jerry Springer
+Alec Baldwin
+Kim Basinger
+Brian Grazer
+Ron Howard
+George Carlin
+Martin Mull
+Yo La Tengo
+Mark Hamill
+Leavelle
+Theater owner
+Joe Mantegna
+Dick Tufeld
+The Moody Blues
+Cyndi Lauper
+Troy Aikman
+Rosey Grier
+John Madden
+Dan Marino
+Rupert Murdoch
+Dolly Parton
+Pat Summerall
+Fred Willard
+Ed Begley, Jr.
+Jan Hooks
+Elton John
+John Kassir
+Jasper Johns
+Isabella Rossellini
+Jack LaLanne
+Michael McKean
+Stephen Hawking
+Denice Kumagai
+Karen Maruyama
+George Takei
+Gedde Watanabe
+Father Toilet
+Keone Young
+Jack Burns
+Mel Gibson
+Mark McGwire
+Edward Asner
+Tom Arnold
+Dick Clark
+Lucy Lawless
+Frank Welker
+The B-52's
+Frank Welker
+Ron Howard
+Penn Jillette
+Pat O'Brien
+Nancy O'Dell
+Teller
+Jan Hooks
+Garry Marshall
+Butch Patrick
+Frank Welker
+John Goodman
+Jan Hooks
+Jay North
+Henry Winkler
+Clarence Clemons
+Gary Coleman
+Joe Mantegna
+Tim Robbins
+Elwood Edwards
+Don Cheadle
+Joe Mantegna
+Britney Spears
+Randy Bachman
+Jim Cummings
+Trevor Denman
+Fred Turner
+Shawn Colvin
+Frank Welker
+Betty White
+Diedrich Bader
+Joe C.
+Robert Evans
+Kid Rock
+Charlie Rose
+Frank Welker
+Parker Posey
+Marc Wilmore
+Jim Forbes
+Willie Nelson
+Gary Coleman
+Frank Welker
+The Who
+Drew Barrymore
+Stephen King
+Joe Mantegna
+Jay Mohr
+Amy Tan
+John Updike
+Joshua Jackson
+Leeza Gibbons
+Patrick McGoohan
+Edward Norton
+Michael Keaton
+Charles Napier
+Robert Schimmel
+Bruce Vilanch
+Tom Savini
+Andre Agassi
+Pete Sampras
+Serena Williams
+Venus Williams
+Gary Coleman
+Kelsey Grammer
+Stacy Keach
+Kathy Griffin
+Jan Hooks
+Frank Welker
+Joe Mantegna
+Frankie Muniz
+Shawn Colvin
+Frank Welker
+Pierce Brosnan
+Matthew Perry
+Jess Harnell
+Jane Kaczmarek
+Julia Louis-Dreyfus
+George Takei
+Joe Mantegna
+Paul Newman
+Judith Owen
+Richard Gere
+Jane Kaczmarek
+Delroy Lindo
+Ben Stiller
+John Kassir
+Jon Lovitz
+Wolfgang Puck
+Reese Witherspoon
+Dennis Weaver
+Frank Welker
+Olympia Dukakis
+Bill Saluga
+Phish
+Stan Lee
+James Lipton
+Robert Pinsky
+Carmen Electra
+Frances Sternhagen
+Joe Mantegna
+Elvis Costello
+Mick Jagger
+Lenny Kravitz
+Tom Petty
+Keith Richards
+Brian Setzer
+Tony Bennett
+Baha Men
+Jan Hooks
+Burt Ward
+Adam West
+Larry Holmes
+David Lander
+Kelsey Grammer
+Sally Stevens
+Little Richard
+Elliott Gould
+Pamela Reed
+Lisa Leslie
+Blink-182
+Tony Hawk
+Jane Kaczmarek
+George Plimpton
+James L. Brooks
+Helen Fielding
+Marisa Tomei
+Joe Mantegna
+Eric Idle
+Joe Mantegna
+Ben Schatz
+Scott Thompson
+"Weird Al" Yankovic
+David Byrne
+Andy Serkis
+Jonathan Taylor Thomas
+Stacy Keach
+John Kassir
+Jackson Browne
+Steve Buscemi
+Jane Kaczmarek
+Joe Mantegna
+Oscar De La Hoya
+Jennifer Garner
+Dudley R. Herschbach
+Jerry Lewis
+Glenn Close
+Michael Moore
+Tony Blair
+Jane Leeves
+Evan Marriott
+Ian McKellen
+J. K. Rowling
+Charles Napier
+Jackie Mason
+Mr. T
+Jim Gilstrap
+Tom Clancy
+Ashley Olsen
+Mary-Kate Olsen
+Thomas Pynchon
+Nick Bakay
+William Daniels
+Isabel Sanford
+Dick Tufeld
+Simon Cowell
+Jon Lovitz
+Jay Sherman
+Llewelyn Sinclair
+Aristotle Amadopoulis
+Professor Lombardo
+Brave Combo
+Sarah Michelle Gellar
+Jane Kaczmarek
+Charles Napier
+Matt Groening
+Mark Campbell
+Nichelle Nichols
+James Caan
+Thomas Pynchon
+Kim Cattrall
+Terry Greene
+Eric Idle
+Tom Brady
+LeBron James
+Michelle Kwan
+Yao Ming
+Warren Sapp
+50 Cent
+Gary Busey
+Jane Kaczmarek
+Lucy Liu
+Robert Wagner
+Frank Gehry
+Joe Mantegna
+Charles Napier
+John DiMaggio
+Amy Poehler
+Stephen Hawking
+Ray Romano
+Albert Brooks
+Jacques
+Fantasia Barrino
+Baha Men
+Los Lobos
+Jason Bateman
+Liam Neeson
+Alec Baldwin
+Joe Mantegna
+Terry Bradshaw
+Dennis Rodman
+Lily Tomlin
+Maria Grazia Cucinotta
+Kelsey Grammer
+Joe Frazier
+William H. Macy
+Michael York
+Maurice LaMarche
+Antonio Fargas
+Randy Johnson
+Susan Sarandon
+Dave Thomas
+Ricky Gervais
+Michael Carrington
+Rob Reiner
+Richard Dean Anderson
+Meher Tatna
+Jim Gilstrap
+Frances McDormand
+Sal Bando
+Gene Tenace
+Melanie Griffith
+Larry Hagman
+Stacy Keach
+Mandy Moore
+Michael Imperioli
+Joe Mantegna
+Metallica
+Joe Pantoliano
+The White Stripes
+Fran Drescher
+Maurice LaMarche
+Richard Lewis
+Phil McGraw
+Sir Mix-a-Lot
+Maurice LaMarche
+Kiefer Sutherland
+Michael Chabon
+Jonathan Franzen
+J. K. Simmons
+Gore Vidal
+Tom Wolfe
+Elvis Stojko
+Maurice LaMarche
+Oceanographer
+Sab Shimono
+Natalie Portman
+Eric Idle
+Peter Bogdanovich
+Andy Dick
+James Patterson
+Meg Ryan
+Stephen Sondheim
+Jane Kaczmarek
+Jon Lovitz
+J. K. Simmons
+Betty White
+Ronaldo
+Rudy Giuliani
+Stephen Hawking
+Maurice LaMarche
+Mary Lynn Rajskub
+Kiefer Sutherland
+Maurice LaMarche
+Ludacris
+Stephen Colbert
+Lionel Richie
+Plácido Domingo
+Maya Rudolph
+Matt Dillon
+Steve Buscemi
+Julia Louis-Dreyfus
+Ted Nugent
+Maurice LaMarche
+Jack Black
+Daniel Clowes
+Maurice LaMarche
+Sang Am Lee
+Alan Moore
+Art Spiegelman
+Kelsey Grammer
+John Mahoney
+Keith Olbermann
+David Hyde Pierce
+Dan Rather
+Jon Stewart
+Kurt Loder
+"Weird Al" Yankovic
+Topher Grace
+Terry Gross
+Beverly D'Angelo
+Dixie Chicks
+Zooey Deschanel
+Jim Jarmusch
+John C. Reilly
+Lance Armstrong
+Glenn Close
+Drew Carey
+Robert Forster
+Julia Louis-Dreyfus
+Joe Mantegna
+Brian Grazer
+Denis Leary
+Joe Montana
+Maurice LaMarche
+Merl Reagle
+Will Shortz
+Scott Thompson
+Shohreh Aghdashloo
+Marv Albert
+Jeff Bezos
+Mark Cuban
+Emily Blunt
+Fall Out Boy
+Maurice LaMarche
+Ed Begley, Jr.
+Glen Hansard
+Markéta Irglová
+Colm Meaney
+Kelsey Grammer
+Anne Hathaway
+Maurice LaMarche
+Joe Mantegna
+Ellen Page
+Jodie Foster
+Matt Groening
+Seth Rogen
+Kevin Michael Richardson
+Chuck Liddell
+Jonah Hill
+Neve Campbell
+Kim Cattrall
+Huell Howser
+Cooper Manning
+Eli Manning
+Peyton Manning
+Jordan Nagai
+Smothers Brothers
+Mitch Albom
+Anne Hathaway
+Eartha Kitt
+Maurice LaMarche
+Gary Larson
+Jackie Mason
+Chris Martin
+Bob Costas
+Wren T. Brown
+Angela Bassett
+Sarah Silverman
+Sacha Baron Cohen
+Yael Naim
+Joe Mantegna
+Kevin Michael Richardson
+Jane Kaczmarek
+Maurice LaMarche
+Joe Mantegna
+Eddie Izzard
+Prince Charles
+Nigel Bakerbutcher
+Don Pardo
+Kelsey Grammer
+Simon Cowell
+Ellen DeGeneres
+Kara DioGuardi
+Randy Jackson
+Rupert Murdoch
+Ryan Seacrest
+Jemaine Clement
+Ira Glass
+Stephen Hawking
+Bret McKenzie
+Lea Michele
+Cory Monteith
+Amber Riley
+Chris Hansen
+Muhammad Yunus
+Mark Zuckerberg
+Bill James
+Mike Scioscia
+Hugh Laurie
+Daniel Radcliffe
+Danica Patrick
+Rachel Weisz
+Katy Perry
+Martha Stewart
+Jon Hamm
+Joe Mantegna
+Fit Tony
+Alyson Hannigan
+Scott Thompson
+Kristen Wiig
+Michael Paul Chan
+James Lipton
+David Mamet
+Garry Marshall
+Halle Berry
+Russell Brand
+Ricky Gervais
+Maurice LaMarche
+Nick Park
+J. B. Smoove
+Werner Herzog
+Kevin Michael Richardson
+Tommy Chong
+Cheech Marin
+Kareem Abdul-Jabbar
+Kevin Michael Richardson
+Paul Rudd
+David Copperfield
+Ricky Jay
+Penn Jillette
+Martin Landau
+Jack McBrayer
+Teller
+Joe Mantegna
+Kristen Schaal
+Albert Brooks
+Ken Burns
+Joey Kramer
+Tom Colicchio
+Kevin Michael Richardson
+Kiefer Sutherland
+Jackie Mason
+Aron Ralston
+Jane Lynch
+Mario Batali
+Anthony Bourdain
+Tim Heidecker
+Gordon Ramsay
+Eric Wareheim
+Neil Gaiman
+Andy García
+Kevin Michael Richardson
+John Slattery
+Matthew Weiner
+Kevin Dillon
+Janeane Garofalo
+Jackie Mason
+Joan Rivers
+Dana Gould
+Ted Nugent
+Armie Hammer
+David Letterman
+Tiger Lillies
+Jeremy Irons
+Michael Cera
+Jamie Hyneman
+Adam Savage
+Julian Assange
+Kelsey Grammer
+Alison Krauss
+Jackie Mason
+Robbie Conal
+Ron English
+Shepard Fairey
+Nicholas McKaig
+Kenny Scharf
+David Byrne
+Glenn Close
+Brent Spiner
+Kevin Michael Richardson
+Steve Coogan
+Treat Williams
+Bryan Cranston
+Eric Idle
+Lady Gaga
+Kevin Michael Richardson
+Ken Burns
+Zooey Deschanel
+Sarah Michelle Gellar
+Anne Hathaway
+Maurice LaMarche
+Don Pardo
+Natalie Portman
+Kevin Michael Richardson
+Al Roker
+Sarah Silverman
+Jon Lovitz
+Jeff Gordon
+Marvin Hamlisch
+Anika Noni Rose
+Jennifer Tilly
+Steve Carell
+Joe Mantegna
+Alex Trebek
+Kelsey Grammer
+Fred Armisen
+Carrie Brownstein
+Colin Meloy
+Patton Oswalt
+Maurice LaMarche
+Tom Waits
+Valerie Harper
+Danny DeVito
+Rashida Jones
+Robert A. Caro
+Benedict Cumberbatch
+Alan Rickman
+Zooey Deschanel
+Max Weinberg
+Kevin Michael Richardson
+Richard Dawkins
+Tina Fey
+Janet Reno
+Maggy Reno Hurchalla
+Bryan Cranston
+Maurice LaMarche
+Aaron Paul
+Wanda Sykes
+George Takei
+Edward Norton
+Kevin Michael Richardson
+Sonny Rollins
+Justin Bieber
+Bill Hader
+Jane Krakowski
+Patrick Stewart
+Sigur Rós
+Lisa Lampanelli
+Seth MacFarlane
+Kevin Michael Richardson
+Kristen Wiig
+Rachel Maddow
+Joe Namath
+Jon Lovitz
+Elisabeth Moss
+Anderson Cooper
+Eva Longoria
+Kevin Michael Richardson
+Judd Apatow
+Will Arnett
+Rob Halford
+Leslie Mann
+Kevin Michael Richardson
+Hollywood Bigshot
+Seth Rogen
+Paul Rudd
+Channing Tatum
