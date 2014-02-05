@@ -436,11 +436,11 @@ fuzziac.prototype = {
 			worstValue = 1,
 			resultLimit = 10,
 			resultArray = [];
-		//var dateStart = {},
-		//	dateEnd = {},
+		var dateStart = {},
+			dateEnd = {},
 		
 		// Emperical Analysis
-		//dateStart = new Date();
+		dateStart = new Date();
 
 		// check against all names in the name list
 		for(var i=0; i<pArray.length; i++){
@@ -462,9 +462,9 @@ fuzziac.prototype = {
 		//resultArray = resultArray.slice(0, resultLimit);
 
 		// Emperical Analysis
-		//dateEnd = new Date();
-		//timeElapsed = dateEnd.getTime() - dateStart.getTime();
-		//console.log(timeElapsed);
+		dateEnd = new Date();
+		timeElapsed = dateEnd.getTime() - dateStart.getTime();
+		console.log('topMatchesFromArray:', timeElapsed);
 
 		return resultArray;
 	}
