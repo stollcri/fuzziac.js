@@ -70,5 +70,5 @@ The autocomplete function of the current jQuery UI seems to be slower than the v
 ![Performance Graph](./analysis/analysis.png)
 
 
-[fuzziacpost]: http://christopherstoll.org/2014/01/18/objective-c-increment-operator.html
+[fuzziacpost]: http://christopherstoll.org/2014/01/24/fuzziac-javascript-string-matching.html
 [fuzziacresearch]: analysis/2011-11_FinalProjectReport.pdf
