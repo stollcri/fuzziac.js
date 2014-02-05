@@ -36,7 +36,7 @@ To compare stringB to stringA and then output the debug matrix into `#test_table
 </script>
 ```
 
-To compare a string (a name entered into an autocomplete box) to an array of lowercase, special character-free name strings (stored here in names.js, but which should probably come from a JSON API):
+To compare a string (a name entered into an autocomplete box) to an array of special character-free name strings (stored here in names.js, but which should probably come from a JSON API):
 
 ```html
 <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -65,7 +65,9 @@ To compare a string (a name entered into an autocomplete box) to an array of low
 </script>
 ```
 
-By the way, the autocomplete function of the current jQuery UI seems to be much slower than the version I originally used in 2011. Perhaps the technique I am using is outdated. I am working on improving fuzziac.js, then I'll check on the autocomplete. Fuzziac.js should run in O(n), but the overhead constants are quite large, so you probably only want to use fuzziac with arrays of less 1,000 name strings.
+The autocomplete function of the current jQuery UI seems to be slower than the version I originally used in 2011. Perhaps the technique I am using is outdated. I am working on improving fuzziac.js to handle larger data sets, then I'll check on the autocomplete. Fuzziac.js should run in O(n), but the overhead constants are quite large, so you probably only want to use fuzziac with arrays of less 800 name strings. The list I am using here has over 4,000 entries, which is too large for production use, but it gives my machine a challenge.
+
+![Performance Graph](./analysis.png)
 
 
 [fuzziacpost]: http://christopherstoll.org/2014/01/18/objective-c-increment-operator.html
