@@ -173,9 +173,9 @@ fuzziac.prototype = {
 	 * @returns {Number} Score for the current characters
 	 */
 	_characterScore: function(pCharA, pCharB){
-		var matchScore = 1,
+		var matchScore = 10,
 			mismatchScore = 0,
-			mismatchPenalty = -.4,
+			mismatchPenalty = -4,
 			charIndexA = 0,
 			charIndexB = 0,
 			refValue = 0;
@@ -189,8 +189,8 @@ fuzziac.prototype = {
 				
 				if(charIndexA && charIndexB){
 					mismatchScore = this.characterMatrix[charIndexA][charIndexB]
-					refValue = parseInt(mismatchScore, 16) / 10;
-										
+					refValue = parseInt(mismatchScore, 16);
+
 					if(refValue){
 						return refValue;
 					}else{
@@ -214,8 +214,8 @@ fuzziac.prototype = {
 	 * @returns {Number} Score for the current characters
 	 */
 	_gappedScore: function(pCharA, pCharB){
-		var gapPenalty = -.3,
-			mismatchPenalty = -.4;
+		var gapPenalty = -3,
+			mismatchPenalty = -4;
 			
 		if((pCharA == ' ') || (pCharB == ' ')){
 			return gapPenalty;
@@ -233,7 +233,7 @@ fuzziac.prototype = {
 	 * @returns {Number} Score for the current characters
 	 */
 	_transposedScore: function(pCharA, pCharB){
-		var transposePenalty = -.2;
+		var transposePenalty = -2;
 		return transposePenalty;
 	},
 	
@@ -250,7 +250,7 @@ fuzziac.prototype = {
 		// fill DV, the dynamic programming matrix, with zeros
 		for(var ix=0; ix<this.nameTargetLength; ix++){
 			tmpArray.push(0);
-		}		
+		}
 		for(var iy=0; iy<this.nameSourceLength; iy++){
 			this.dynamicMatrix.push(tmpArray.slice(0));
 		}
@@ -362,7 +362,7 @@ fuzziac.prototype = {
 	_finalMatchScore: function(pStringScores, pStringWeights){
 		var averageNameLength = (this.nameSourceLength + this.nameTargetLength) / 2
 		this.overallScore = (2 * this.maxMatrixValue) / averageNameLength;
-		this.finalScore = this.overallScore * 10;
+		this.finalScore = this.overallScore;
 	},
 	
 	/**
@@ -422,6 +422,7 @@ fuzziac.prototype = {
 		
 		this._backtrack();
 		this._finalMatchScore();	
+		console.log('Final score: ', this.finalScore);
 		return this.finalScore;
 	},
 
