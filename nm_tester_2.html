@@ -21,7 +21,7 @@
 			$('#searchdo').click(function(){
 				if($('#searchboxa').val() && $('#searchboxb').val()){
 					$('#test_table').html('');
-					nm = new nameMatch($('#searchboxa').val(), true, '#test_table');
+					nm = new fuzziac($('#searchboxa').val(), true, '#test_table');
 					nm.score($('#searchboxb').val());
 				}
 			});
