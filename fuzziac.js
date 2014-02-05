@@ -362,7 +362,7 @@ fuzziac.prototype = {
 	_finalMatchScore: function(pStringScores, pStringWeights){
 		var averageNameLength = (this.nameSourceLength + this.nameTargetLength) / 2
 		this.overallScore = (2 * this.maxMatrixValue) / averageNameLength;
-		this.finalScore = this.overallScore;
+		this.finalScore = this.overallScore / 10;
 	},
 	
 	/**
@@ -436,7 +436,7 @@ fuzziac.prototype = {
 	topMatchesFromArray: function(pArray, pLimit){
 		var tmpValue = 0,
 			tmpValRound = 0,
-			worstValue = 1,
+			worstValue = 0,
 			resultLimit = 10,
 			resultArray = [];
 		var dateStart = {},
