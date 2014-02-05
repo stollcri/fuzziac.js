@@ -6,58 +6,64 @@ If you would like to know the full story on how I came to develop this solution 
 ## Usage
 To use fuzziac.js to compare two strings (stringB and stringC) to a master string (stringA):
 
-	<script type="text/javascript" src="./fuzziac.js"></script>
-	<script type="text/javascript">
-		var nm = {},
-			stringA = 'Johnny Appleseed',
-			stringB = 'John Apples',
-			stringC = 'Jon Appleton',
-			finalScore = 0;
+```html
+<script type="text/javascript" src="./fuzziac.js"></script>
+<script type="text/javascript">
+	var nm = {},
+		stringA = 'Johnny Appleseed',
+		stringB = 'John Apples',
+		stringC = 'Jon Appleton',
+		finalScore = 0;
 
-		nm = new fuzziac(stringA);
-		finalScore = nm.score(stringB);
-		finalScore = nm.score(stringC);
-	</script>
+	nm = new fuzziac(stringA);
+	finalScore = nm.score(stringB);
+	finalScore = nm.score(stringC);
+</script>
+```
 
 To compare stringB to stringA and then output the debug matrix into `#test_table`:
 
-	<script type="text/javascript" src="./fuzziac.js"></script>
-	<script type="text/javascript">
-		var nm = {},
-			stringA = 'Johnny Appleseed',
-			stringB = 'John Apples',
-			finalScore = 0;
+```html
+<script type="text/javascript" src="./fuzziac.js"></script>
+<script type="text/javascript">
+	var nm = {},
+		stringA = 'Johnny Appleseed',
+		stringB = 'John Apples',
+		finalScore = 0;
 
-		nm = new fuzziac(stringA, true, '#test_table');
-		nm.score(stringB);
-	</script>
+	nm = new fuzziac(stringA, true, '#test_table');
+	nm.score(stringB);
+</script>
+```
 
 To compare a string (a name entered into an autocomplete box) to an array of lowercase, special character-free name strings (stored here in names.js, but which should probably come from a JSON API):
 
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-	<script type="text/javascript" src="./fuzziac.js"></script>
-	<script type="text/javascript" src="./names.js"></script>
-	<script type="text/javascript">
-		var nm = {},
-			resultArray = [];
-		
-		function findName(pName){
-			nm = new fuzziac(pName);
-			return nm.topMatchesFromArray(allNames);
-		}
-		
-		$(document).ready(function(){
-			$("#searchbox").autocomplete({
-				minLength: 3,
-				source: function(request, response) {
-					response(
-						findName(request.term)
-					);
-				}
-			});
+```html
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="./fuzziac.js"></script>
+<script type="text/javascript" src="./names.js"></script>
+<script type="text/javascript">
+	var nm = {},
+		resultArray = [];
+	
+	function findName(pName){
+		nm = new fuzziac(pName);
+		return nm.topMatchesFromArray(allNames);
+	}
+	
+	$(document).ready(function(){
+		$("#searchbox").autocomplete({
+			minLength: 3,
+			source: function(request, response) {
+				response(
+					findName(request.term)
+				);
+			}
 		});
-	</script>
+	});
+</script>
+```
 
 By the way, the autocomplete function of the current jQuery UI seems to be much slower than the version I originally used in 2011. Perhaps the technique I am using is outdated. I am working on improving fuzziac.js, then I'll check on the autocomplete. Fuzziac.js should run in O(n), but the overhead constants are quite large, so you probably only want to use fuzziac with arrays of less 1,000 name strings.
 
