@@ -244,7 +244,8 @@ fuzziac.prototype = {
 	_buildMatrix: function(){
 		var tmpArray = [],
 			tCharA = '',
-			tCharB = '';
+			tCharB = '',
+			gapScore = 0;
 		
 		// fill DV, the dynamic programming matrix, with zeros
 		for(var ix=0; ix<this.nameTargetLength; ix++){
@@ -260,11 +261,12 @@ fuzziac.prototype = {
 				tCharA = this.nameSource[iy-1];
 				tCharB = this.nameTarget[ix-1];
 				
+				gapScore = this._gappedScore(tCharA, tCharB);
 				this.dynamicMatrix[iy][ix] = Math.max(
 					this.dynamicMatrix[iy-1][ix-1] + this._characterScore(tCharA, tCharB),
 					0,
-					this.dynamicMatrix[iy-1][ix] + this._gappedScore(tCharA, tCharB),
-					this.dynamicMatrix[iy][ix-1] + this._gappedScore(tCharA, tCharB)
+					this.dynamicMatrix[iy-1][ix] + gapScore,
+					this.dynamicMatrix[iy][ix-1] + gapScore
 				);
 				
 				if((this.dynamicMatrix[iy-1][ix] > this.dynamicMatrix[iy-1][ix-1]) && 
