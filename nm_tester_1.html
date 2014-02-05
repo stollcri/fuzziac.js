@@ -34,42 +34,8 @@
 		 * @param {String} pName The string to lookup
 		 */
 		function findName(pName){
-			var tmpValue = 0,
-				tmpValRound = 0,
-				bestValue = 1,
-				resultLimit = 10,
-				dateStart = {},
-				dateEnd = {},
-				times = [];
-			
-			// clear globals
-			resultArray = [];
-			nm = new nameMatch(pName);
-			
-			// Emperical Analysis
-			//dateStart = new Date();
-			
-			// check against all names in the name list
-			for(var i=0; i<allNames.length; i++){
-				tmpValue = nm.score(allNames[i]);
-				tmpValRound = String(Math.round(tmpValue * 100) / 1000);
-				
-				// add selected names to drop-down list
-				// does unnecessary work, refactor to improve speed
-				if(tmpValue > bestValue){
-					resultArray.push(tmpValRound + ' - ' + allNames[i]);
-					resultArray.sort();
-					resultArray.reverse()
-					resultArray = resultArray.slice(0, resultLimit);
-				}
-			}
-			
-			// Emperical Analysis
-			//dateEnd = new Date();
-			//timeElapsed = dateEnd.getTime() - dateStart.getTime();
-			//console.log(timeElapsed);
-				
-			return resultArray;
+			nm = new fuzziac(pName);
+			return nm.topMatchesFromArray(allNames);
 		}
 		
 		/**
@@ -84,24 +50,6 @@
 					);
 				}
 			});
-			
-			/*
-			var runningTotal = 0,
-				minLength = 29,
-				maxLength = 0;
-			for(var i=0; i<allNames.length; i++){
-				runningTotal += allNames[i].length;
-				if(allNames[i].length > maxLength){
-					maxLength = allNames[i].length;
-				}
-				if(allNames[i].length < minLength){
-					minLength = allNames[i].length;
-				}
-			}
-			console.log(runningTotal/allNames.length);
-			console.log(maxLength);
-			console.log(minLength);
-			*/
 		});
 	</script>
 </head><body>
@@ -111,29 +59,7 @@
 	</div>
 	<div id="examples">
 	<p>Examples:<ul>
-		<li>Chris Stol &raquo; Christopher Stoll (nick name, missing final character)</li>
-		<li>Chris Stll &raquo; Christopher Stoll (nick name, missing internal character</li>
-		<li>Chris Stoll &raquo; Christopher Stoll (nick name)</li>
-		<li>Chirs Stoll &raquo; Christopher Stoll (nick name, transposed characters</li>
-		<li>Chris Stall &raquo; Christopher Stoll (nick name, misspelling)</li>
-		<li>Chris Stahl &raquo; Christopher Stoll (nick name, phonetic misspelling</li>
-		<li>Chris Stolls &raquo; Christopher Stoll (nick name, additional final character)</li>
-		<li>Stoll, Chris &raquo; Christopher Stoll (first/last order, nick name)</li>
-		<li>Stoll, Christ &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
-		<li>Stoll, Christo &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
-		<li>Stoll, Christop &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
-		<li>Stoll, Christoph &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
-		<li>Stoll, Christophe &raquo; Christopher Stoll (first/last order, incomplete first name)</li>
-		<li>Ashi Upal &raquo; Ashwani Uppal (nick name)</li>
-		<li>Tom Miller &raquo; Thomas Miller (nick name)</li>
-		<li>Jake Lorenz &raquo; Joachim Lorenz (nick name, Anglicized name)</li>
-		<li>Penny Fang &raquo; Ping Fang (nick name, Anglicized name)</li>
-		<li>Pepe Cruz &raquo; Jose Cruz Espinosa (nick name, Anglicized name)</li>
-		<li>4pp13 &raquo; RW Apple Jr, etc. (Leet-speek example)</li>
-		<li>showcat</li>
-		<li>steef yobs</li>
-		<li>alisan kramavic</li>
-		<li>hanspeater brooder</li>
+		<li></li>
 	</ul></p>
 	</div>
 	<div id="test_table"></div>

@@ -1,4 +1,5 @@
 /**
+ * Based upon:
  * A Dynamic Programming Algorithm for Name Matching
  * Top, P.;   Dowla, F.;   Gansemer, J.;   
  * Sch. of Electr. & Comput. Eng., Purdue Univ., West Lafayette, IN
@@ -12,7 +13,7 @@
  * @param {Boolean} [pDebug=false] The instance is in debugging mode
  * @param {String} [pDebugOutputArea=''] Where to put debuging output
  */
-function nameMatch(pNameSource, pDebug, pDebugOutputArea){
+function fuzziac(pNameSource, pDebug, pDebugOutputArea){
 	var tNameSource = pNameSource || '';
 	
 	if(tNameSource){
@@ -39,7 +40,7 @@ function nameMatch(pNameSource, pDebug, pDebugOutputArea){
 	this._reset();
 }
 
-nameMatch.prototype = {
+fuzziac.prototype = {
 	/**
 	 * Reset class variables
 	 * @private
@@ -420,5 +421,51 @@ nameMatch.prototype = {
 		this._backtrack();
 		this._finalMatchScore();	
 		return this.finalScore;
+	},
+
+	/**
+	 * Find matches from an array of choices
+	 *
+	 * @param {String[]} pArray The array of strings to check against
+	 * @param {Number} [10] pLimit The number of resutls to return 
+	 * @returns {string[]} The top matching strings
+	 */
+	topMatchesFromArray: function(pArray, pLimit){
+		var tmpValue = 0,
+			tmpValRound = 0,
+			worstValue = 1,
+			resultLimit = 10,
+			resultArray = [];
+		//var dateStart = {},
+		//	dateEnd = {},
+		
+		// Emperical Analysis
+		//dateStart = new Date();
+
+		// check against all names in the name list
+		for(var i=0; i<pArray.length; i++){
+			tmpValue = this.score(allNames[i]);
+			tmpValRound = String(Math.round(tmpValue * 100) / 1000);
+
+			// add selected names to drop-down list
+			// does unnecessary work, refactor to improve speed
+			if(tmpValue > worstValue){
+				resultArray.push(tmpValRound + ' - ' + pArray[i]);
+				resultArray.sort();
+				resultArray.reverse()
+				resultArray = resultArray.slice(0, resultLimit);
+			}
+		}
+
+		//resultArray.sort();
+		//resultArray.reverse()
+		//resultArray = resultArray.slice(0, resultLimit);
+
+		// Emperical Analysis
+		//dateEnd = new Date();
+		//timeElapsed = dateEnd.getTime() - dateStart.getTime();
+		//console.log(timeElapsed);
+
+		return resultArray;
 	}
 }
