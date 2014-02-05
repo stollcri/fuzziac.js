@@ -17,6 +17,7 @@ function fuzziac(pNameSource, pDebug, pDebugOutputArea){
 	var tNameSource = pNameSource || '';
 	
 	if(tNameSource){
+		// convert "last, first" to "first last"
 		if(tNameSource.indexOf(',') > 0){
 			var tIndex = tNameSource.indexOf(','),
 				tFirst = tNameSource.slice(tIndex+1),
@@ -24,11 +25,13 @@ function fuzziac(pNameSource, pDebug, pDebugOutputArea){
 			tNameSource = tFirst + ' ' + tLast;
 		}
 		
+		// all lowercase, no special characters, and no double sapces
 		tNameSource = tNameSource.toLowerCase();
 		tNameSource = tNameSource.replace(/[.'"]/ig, ' ');
 		tNameSource = tNameSource.replace(/\s{2,}/g, ' ');
 	}
 	
+	// TODO: remove when converted for string matching only
 	// debug variables
 	this.DEBUG = pDebug || false;
 	this.DEBUG_AREA = pDebugOutputArea;
@@ -48,6 +51,7 @@ fuzziac.prototype = {
 	_reset: function(pNameTarget){
 		var tNameTarget = pNameTarget || '';
 		
+		// TODO: remove when converted for string matching only
 		if(tNameTarget){
 			tNameTarget = tNameTarget.toLowerCase();
 			tNameTarget = tNameTarget.replace(/[.,'"]/ig, '');
@@ -226,6 +230,7 @@ fuzziac.prototype = {
 	
 	/**
 	 * Return a score for transposed strings
+	 * TODO: Either actuallly check for transposed characters or eliminate
 	 *
 	 * @private
 	 * @param {String} pCharA The first character to test
@@ -359,7 +364,7 @@ fuzziac.prototype = {
 	 * Calculate the final match score for this pair of names
 	 * @private
 	 */
-	_finalMatchScore: function(pStringScores, pStringWeights){
+	_finalMatchScore: function(){
 		var averageNameLength = (this.nameSourceLength + this.nameTargetLength) / 2
 		this.overallScore = (2 * this.maxMatrixValue) / averageNameLength;
 		this.finalScore = this.overallScore / 10;
@@ -367,6 +372,8 @@ fuzziac.prototype = {
 	
 	/**
 	 * Display debug information
+	 * TODO: remove when converted for string matching only
+	 *
 	 * @private
 	 */
 	_debug_ShowDVtable: function(){
@@ -422,7 +429,6 @@ fuzziac.prototype = {
 		
 		this._backtrack();
 		this._finalMatchScore();	
-		console.log('Final score: ', this.finalScore);
 		return this.finalScore;
 	},
 
@@ -437,13 +443,13 @@ fuzziac.prototype = {
 		var tmpValue = 0,
 			tmpValRound = 0,
 			worstValue = 0,
-			resultLimit = 10,
+			resultLimit = pLimit || 10,
 			resultArray = [];
-		var dateStart = {},
-			dateEnd = {},
+		//var dateStart = {},
+		//	dateEnd = {},
 		
 		// Emperical Analysis
-		dateStart = new Date();
+		//dateStart = new Date();
 
 		// check against all names in the name list
 		for(var i=0; i<pArray.length; i++){
@@ -453,11 +459,15 @@ fuzziac.prototype = {
 			// add selected names to drop-down list
 			// does unnecessary work, refactor to improve speed
 			if(tmpValue > worstValue){
-				resultArray.push(tmpValRound + ' - ' + pArray[i]);
+				resultArray.push(tmpValRound + '~~~' + pArray[i]);
 				resultArray.sort();
 				resultArray.reverse()
 				resultArray = resultArray.slice(0, resultLimit);
 			}
+		}
+
+		for(var i=0; i<resultArray.length; i++){
+			resultArray[i] = resultArray[i].replace(/.*~~~/ig, '');
 		}
 
 		//resultArray.sort();
@@ -465,9 +475,9 @@ fuzziac.prototype = {
 		//resultArray = resultArray.slice(0, resultLimit);
 
 		// Emperical Analysis
-		dateEnd = new Date();
-		timeElapsed = dateEnd.getTime() - dateStart.getTime();
-		console.log('topMatchesFromArray:', timeElapsed);
+		//dateEnd = new Date();
+		//timeElapsed = dateEnd.getTime() - dateStart.getTime();
+		//console.log('topMatchesFromArray:', timeElapsed);
 
 		return resultArray;
 	}
