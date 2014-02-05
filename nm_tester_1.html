@@ -37,6 +37,11 @@
 			nm = new fuzziac(pName);
 			return nm.topMatchesFromArray(allNames);
 		}
+
+		function fuzziacTest(pName, pArray){
+			nm = new fuzziac(pName);
+			return nm.topMatchesFromArray(pArray);
+		}
 		
 		/**
 		 * Defer until page is loaded
@@ -50,6 +55,28 @@
 					);
 				}
 			});
+
+			/* analysis code
+			console.log('Testing ...');
+			var itemsToCheck = allNames.length,
+				arrayToTest = [],
+				dateStart = {},
+				dateEnd = {};
+			while (itemsToCheck > 107) {
+				arrayToTest = [];
+				arrayToTest = allNames.slice(0, itemsToCheck);
+
+				dateStart = new Date();
+				fuzziacTest('Christopher Stoll', arrayToTest);
+				dateEnd = new Date();
+
+				timeElapsed = dateEnd.getTime() - dateStart.getTime();
+				console.log(itemsToCheck, timeElapsed);
+
+				itemsToCheck -= 107;
+			}
+			console.log(' ... Complete.');
+			*/
 		});
 	</script>
 </head><body>
@@ -83,7 +110,7 @@
 			<td>Joachim Bruder</td>
 			<td>German nicknames can be unknown to English speakers</td>
 		</tr><tr>
-			<td>Yoachim Bruder</td>
+			<td>Yokim Bruder</td>
 			<td>Joachim Bruder</td>
 			<td>English speakers my hear it pronounced with a 'y'</td>
 		</tr><tr>
@@ -101,15 +128,11 @@
 		</tr><tr>
 			<td>B3n Sti11er</td>
 			<td>Ben Stiller</td>
-			<td>Is it a 1 or an l? (this is more useful in other applications</td>
-		</tr><tr>
-			<td>Lincon, A</td>
-			<td>Abraham Lincoln</td>
-			<td>To help non English speakers find names with silent letters</td>
+			<td>Is it a 1 or an l? (this is more useful in other applications)</td>
 		</tr><tr>
 			<td>Suzzy Seranden</td>
 			<td>Susan Sarandon</td>
-			<td>To help non English speakers find names with similar sounding consonants</td>
+			<td>To help find names with similar sounding consonants</td>
 		</tr><tr>
 			<td>Hans Olo</td>
 			<td>Han Solo</td>
