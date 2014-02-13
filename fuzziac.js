@@ -486,10 +486,6 @@ fuzziac.prototype = {
 			//resultArray[i] = resultArray[i].replace(/.*~~~/ig, '');
 		}
 
-		//resultArray.sort();
-		//resultArray.reverse()
-		//resultArray = resultArray.slice(0, resultLimit);
-
 		// Emperical Analysis
 		//dateEnd = new Date();
 		//timeElapsed = dateEnd.getTime() - dateStart.getTime();
