@@ -6,7 +6,7 @@ If you would like to know the full story on how I came to develop this solution 
 ## What Does it Do?
 It takes a horribly mispelled (or phonetically mispelled) name and suggests the best fitting one it can find from your list of supplied names (from you user or employee list). It can be used for other strings besides names as well, as long as the search string is relatively short (less than 20 characters) and the list of possibilities is not too long (less than 1000 choices).
 
-![Performance Graph](./analysis/analysis.png)
+![Performance Graph](./analysis/example.png)
 
 ## Usage
 To use fuzziac.js to compare two strings (stringB and stringC) to a master string (stringA):
