@@ -445,6 +445,11 @@ fuzziac.prototype = {
 			worstValue = 0,
 			resultLimit = pLimit || 10,
 			resultArray = [];
+			
+		for(var i=0; i<resultLimit; ++i){
+			resultArray.push({v:0,n:'-'});
+		}
+		
 		//var dateStart = {},
 		//	dateEnd = {},
 		
@@ -454,20 +459,31 @@ fuzziac.prototype = {
 		// check against all names in the name list
 		for(var i=0; i<pArray.length; i++){
 			tmpValue = this.score(allNames[i]);
-			tmpValRound = String(Math.round(tmpValue * 100) / 1000);
+			//tmpValRound = String(Math.round(tmpValue * 100) / 1000);
 
 			// add selected names to drop-down list
 			// does unnecessary work, refactor to improve speed
-			if(tmpValue > worstValue){
-				resultArray.push(tmpValRound + '~~~' + pArray[i]);
-				resultArray.sort();
-				resultArray.reverse()
-				resultArray = resultArray.slice(0, resultLimit);
+			if(tmpValue > resultArray[resultLimit-1].v){
+				newObj = {v:tmpValue,n:pArray[i]};
+				tmpObj = {v:0,n:''};
+				for(var j=0; j<resultLimit; ++j){
+					if(newObj.v > resultArray[j].v){
+						tmpObj.v = resultArray[j].v;
+						tmpObj.n = resultArray[j].n;
+						resultArray[j].v = newObj.v;
+						resultArray[j].n = newObj.n;
+						newObj.v = tmpObj.v;
+						newObj.n = tmpObj.n;
+					}
+				}
 			}
 		}
 
 		for(var i=0; i<resultArray.length; i++){
-			resultArray[i] = resultArray[i].replace(/.*~~~/ig, '');
+			tmp = resultArray[i];
+			//resultArray[i] = tmp.v + ' ~~ ' + tmp.n;
+			resultArray[i] = tmp.n;
+			//resultArray[i] = resultArray[i].replace(/.*~~~/ig, '');
 		}
 
 		//resultArray.sort();
