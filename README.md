@@ -65,7 +65,7 @@ To compare a string (a name entered into an autocomplete box) to an array of spe
 </script>
 ```
 
-The autocomplete function of the current jQuery UI seems to be slower than the version I originally used in 2011. Perhaps the technique I am using is outdated. I am working on improving fuzziac.js to handle larger data sets, then I'll check on the autocomplete. Fuzziac.js should run in O(n), but the overhead constants are quite large, so you probably only want to use fuzziac with arrays of less 800 name strings. The list I am using here has over 4,000 entries, which is too large for production use, but it gives my machine a challenge.
+The autocomplete function of the current jQuery UI seems to be slower than the version I originally used in 2011. Perhaps the technique I am using is outdated. I am working on improving fuzziac.js to handle larger data sets, then I'll check on the autocomplete. Fuzziac.js should run in O(n), but the overhead constants are quite large, so you probably only want to use fuzziac with arrays of less about 1000 name strings. The list I am using here has over 4,000 entries, which is too large for production use, but it gives my machine a challenge.
 
 ![Performance Graph](./analysis/analysis.png)
 

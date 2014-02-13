@@ -483,7 +483,6 @@ fuzziac.prototype = {
 			tmp = resultArray[i];
 			//resultArray[i] = tmp.v + ' ~~ ' + tmp.n;
 			resultArray[i] = tmp.n;
-			//resultArray[i] = resultArray[i].replace(/.*~~~/ig, '');
 		}
 
 		// Emperical Analysis
