@@ -13,7 +13,7 @@
  * @param {Boolean} [useSearchSession=true] Use a search session
  */
 class Fuzziac {
-	constructor(dataset, useSearchSession=true) {
+	constructor(dataset, useSearchSession = true) {
 		// Pristine dataset, copied into the working dataset
 		this.master_dataset = dataset || [];
 		this.#reset_working_dataset();
@@ -23,7 +23,7 @@ class Fuzziac {
 		this.useSearchSession = useSearchSession;
 
 		// minimum number of characters before a search session is started
-		this.searchSessionMin = 2
+		this.searchSessionMin = 2;
 	}
 
 	/** Reset the working dataset from the master dataset
@@ -32,7 +32,7 @@ class Fuzziac {
 	 */
 	#reset_working_dataset() {
 		this.working_dataset = [];
-		for(const i in this.master_dataset) {
+		for (const i in this.master_dataset) {
 			this.working_dataset.push(this.master_dataset[i]);
 		}
 	}
@@ -44,7 +44,7 @@ class Fuzziac {
 	 */
 	#update_working_dataset(new_dataset) {
 		this.working_dataset = [];
-		for(const i in new_dataset) {
+		for (const i in new_dataset) {
 			this.working_dataset.push(new_dataset[i]);
 		}
 	}
@@ -391,7 +391,7 @@ class Fuzziac {
 	 * @param {Number} resultLimit The number of resutls to return
 	 * @returns {String[]} The top matching strings
 	 */
-	search(searchString, resultLimit=0) {
+	search(searchString, resultLimit = 0) {
 		const cleanedSearchString = Fuzziac.cleanSearchString(searchString);
 
 		let resultArray = [],

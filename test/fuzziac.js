@@ -9,64 +9,64 @@ const Fuzziac = require('../index');
 describe('score', () => {
     describe('exact matches', () => {
         it('should score 1.0 when 1 character matches', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("J", "J")).to.equal(1.0);
         });
 
         it('should score 1.3 when 2 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Jo", "Jo")).to.closeTo(1.3, 0.1);
         });
 
         it('should score 1.5 when 3 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joe", "Joe")).to.equal(1.5);
         });
 
         it('should score 1.6 when 4 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joel", "Joel")).to.equal(1.6);
         });
 
         it('should score 1.8 when 8 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joe Good", "Joe Good")).to.closeTo(1.8, 0.1);
         });
 
         it('should score 1.8 when 16 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joseph Good Luck", "Joseph Good Luck")).to.closeTo(1.8, 0.1);
         });
     });
 
     describe('partial matches', () => {
         it('should score 0.6 when 1 of 2 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Jo", "Yo")).to.closeTo(0.6, 0.1);
         });
 
         it('should score 1.0 when 1 of 3 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joe", "Yoe")).to.equal(1.0);
         });
 
         it('should score 0.5 when 2 of 3 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joe", "Yoh")).to.equal(0.5);
         });
 
         it('should score 0.4 when 1 of 4 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joel", "Yoho")).to.equal(0.4);
         });
 
         it('should score 0.6 when 2 of 4 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joel", "Yohl")).to.closeTo(0.6, 0.05);
         });
 
         it('should score 1.2 when 3 of 4 characters match', () => {
-            const fuzziac = new Fuzziac()
+            const fuzziac = new Fuzziac();
             expect(fuzziac.score("Joel", "Yoel")).to.equal(1.2);
         });
     });
@@ -100,7 +100,7 @@ describe('cleanSearchString', () => {
 
 describe('search', () => {
     it('should only return Moe when searching for Mo', () => {
-        const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"])
+        const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"]);
         const searchResults = fuzziac.search("Mo");
         expect(searchResults).to.be.an('array').that.includes("Moe");
         expect(searchResults).to.have.lengthOf(1);
@@ -109,7 +109,7 @@ describe('search', () => {
     });
 
     it('should only return Moe when searching for Jo', () => {
-        const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"])
+        const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"]);
         const searchResults = fuzziac.search("Jo");
         expect(searchResults).to.be.an('array').that.includes("Moe");
         expect(searchResults).to.have.lengthOf(1);
@@ -119,7 +119,7 @@ describe('search', () => {
 
     // why is this so? because Lair-E, Curl-E -- it's approximate yo
     it('should return Larry, Curly, Moe when searching for Moe', () => {
-        const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"])
+        const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"]);
         const searchResults = fuzziac.search("Moe");
         expect(searchResults).to.be.an('array').that.includes("Moe");
         expect(searchResults).to.have.lengthOf(3);
@@ -128,7 +128,7 @@ describe('search', () => {
     });
 
     it('should only return Moe when searching for Moe and lmiting to 1 result', () => {
-        const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"])
+        const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"]);
         const searchResults = fuzziac.search("Moe", 1)
         expect(searchResults).to.be.an('array').that.includes("Moe");
         expect(searchResults).to.have.lengthOf(1);
@@ -151,7 +151,7 @@ describe('search', () => {
 
     describe('session', () => {
         it('should only return Moe when searching for M-o-e', () => {
-            const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"])
+            const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"]);
             
             let searchResults = fuzziac.search("M");
             expect(searchResults).to.be.an('array').that.includes("Moe");
@@ -173,7 +173,7 @@ describe('search', () => {
         });
 
         it('should only return Moe when searching for M-o-e', () => {
-            const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"])
+            const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"]);
 
             let searchResults = fuzziac.search("Mo");
             expect(searchResults).to.be.an('array').that.includes("Moe");
@@ -191,7 +191,7 @@ describe('search', () => {
 
     describe('session close', () => {
         it('should close when close is called', () => {
-            const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"])
+            const fuzziac = new Fuzziac(["Larry", "Curly", "Moe"]);
 
             let searchResults = fuzziac.search("Mo");
             expect(searchResults).to.be.an('array').that.includes("Moe");
