@@ -1,0 +1,35 @@
+{
+  "name": "fuzziac",
+  "version": "0.1.0",
+  "description": "A utility for on-line approximate string matching",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks --no-exit test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stollcri/fuzziac.js.git"
+  },
+  "keywords": [
+    "fuzzy",
+    "approximate",
+    "string matching"
+  ],
+  "author": "Christopher Stoll <stollcri@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stollcri/fuzziac.js/issues"
+  },
+  "homepage": "https://github.com/stollcri/fuzziac.js#readme",
+  "prettier": {
+    "tabWidth": 4,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
