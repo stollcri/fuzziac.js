@@ -8,4 +8,9 @@ describe('exports', () => {
         const fuzziac = new Fuzziac()
         expect(fuzziac.score).to.be.an.instanceof(Function);
     });
+
+    it('should expose Fuzziac.search', () => {
+        const fuzziac = new Fuzziac()
+        expect(fuzziac.search).to.be.an.instanceof(Function);
+    });
 });

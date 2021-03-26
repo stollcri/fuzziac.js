@@ -10,11 +10,43 @@
  * 
  * @constructor
  * @param {String[]} [dataset=[]] Dataset to search against
+ * @param {Boolean} [useSearchSession=true] Use a search session
  */
 class Fuzziac {
-	constructor(dataset) {
-		// Dataset to search against
-		this.dataset = dataset || []
+	constructor(dataset, useSearchSession=true) {
+		// Pristine dataset, copied into the working dataset
+		this.master_dataset = dataset || [];
+		this.#reset_working_dataset();
+
+		// search sessions will reduce the dataset size as searches are mode
+		// search sessions must be manually closed with a call to closeSearchSession
+		this.useSearchSession = useSearchSession;
+
+		// minimum number of characters before a search session is started
+		this.searchSessionMin = 2
+	}
+
+	/** Reset the working dataset from the master dataset
+	 * 
+	 * @private
+	 */
+	#reset_working_dataset() {
+		this.working_dataset = [];
+		for(const i in this.master_dataset) {
+			this.working_dataset.push(this.master_dataset[i]);
+		}
+	}
+
+	/** Update the working dataset from a provided dataset
+	 * 
+	 * @private
+	 * @param {String[]} new_dataset The provided dataset
+	 */
+	#update_working_dataset(new_dataset) {
+		this.working_dataset = [];
+		for(const i in new_dataset) {
+			this.working_dataset.push(new_dataset[i]);
+		}
 	}
 
 	/** CM, character mismatch lookup,
@@ -328,8 +360,8 @@ class Fuzziac {
 	 * @param {String} searchString 
 	 * @returns {String} The match score of the two strings
 	 */
-	static #cleanSearchString(searchString) {
-		return searchString.toLowerCase().replace(/[.'"]/ig, ' ').replace(/\s{2,}/g, ' ');
+	static cleanSearchString(searchString) {
+		return searchString.toLowerCase().trim().replace(/[.'"]/ig, ' ').replace(/\s{2,}/g, ' ');
 	}
 
 	/**
@@ -339,60 +371,74 @@ class Fuzziac {
 	 * @param {String} tString The target string
 	 * @returns The match score of the two strings
 	 */
-	scoreSingle(sString, tString) {
+	score(sString, tString) {
 		const dynamicMatrix = Fuzziac.#buildMatrix(sString, tString);
 		const maxMatrixValue = Fuzziac.#backtrack(dynamicMatrix, sString, tString);
 		return Fuzziac.#finalMatchScore(sString, tString, maxMatrixValue);
 	}
 
 	/**
+	 * Close the search sesssion (reset the working dataset)
+	 */
+	closeSearchSession() {
+		this.#reset_working_dataset()
+	}
+
+	/**
 	 * Find matches from an array of choices
 	 *
 	 * @param {String} searchString The string to find matches for
-	 * @param {Number} [10] pLimit The number of resutls to return 
+	 * @param {Number} resultLimit The number of resutls to return
 	 * @returns {String[]} The top matching strings
 	 */
-	score(searchString, pLimit) {
-		const cleanedSearchString = Fuzziac.#cleanSearchString(searchString);
+	search(searchString, resultLimit=0) {
+		const cleanedSearchString = Fuzziac.cleanSearchString(searchString);
 
 		let resultArray = [],
 			tmpValue = 0,
-			resultLimit = pLimit || 10,
-			newObj = {},
-			tmpObj = {};
+			tmpCleanString = "";
 
-		for (let i = 0; i < resultLimit; ++i) {
-			resultArray.push({ v: 0, n: '-' });
-		}
+		// score search string against each item of the working dataset
+		for (let i = 0; i < this.working_dataset.length; i++) {
+			tmpCleanString = Fuzziac.cleanSearchString(this.working_dataset[i])
+			tmpValue = this.score(cleanedSearchString, tmpCleanString);
 
-		// check against all names in the name list
-		for (let i = 0; i < this.dataset.length; i++) {
-			tmpValue = this.scoreSingle(cleanedSearchString, this.dataset[i]);
-
-			// add selected names to drop-down list
-			// does unnecessary work, refactor to improve speed
-			if (tmpValue > resultArray[resultLimit - 1].v) {
-				newObj = { v: tmpValue, n: this.dataset[i] };
-				tmpObj = { v: 0, n: '' };
-				for (let j = 0; j < resultLimit; ++j) {
-					if (newObj.v > resultArray[j].v) {
-						tmpObj.v = resultArray[j].v;
-						tmpObj.n = resultArray[j].n;
-						resultArray[j].v = newObj.v;
-						resultArray[j].n = newObj.n;
-						newObj.v = tmpObj.v;
-						newObj.n = tmpObj.n;
-					}
-				}
+			// only keep values that are relevant
+			if (tmpValue > 0) {
+				resultArray.push({ v: tmpValue, k: this.working_dataset[i] })
 			}
 		}
 
+		// sort the relevant results
+		resultArray.sort((a, b) => {
+			if (a.v < b.v) {
+				return -1;
+			} else if (a.v > b.v) {
+				return 1;
+			}
+			return 0;
+		}).reverse();
+
+		// simplify the results list
 		let tmp = {}
 		for (let i = 0; i < resultArray.length; i++) {
 			tmp = resultArray[i];
-			resultArray[i] = tmp.n;
+			resultArray[i] = tmp.k;
 		}
 
+		// only restrict the datase if:
+		//  - search sessions are used
+		//  - there are at least 2 characters in the search string
+		//
+		// speed performance can be increased by dropping this to 1,
+		// the trade-off is a slight drop in accuracy performance
+		if (this.useSearchSession && searchString.length >= this.searchSessionMin) {
+			this.#update_working_dataset(resultArray)
+		}
+
+		if (resultLimit > 0) {
+			return resultArray.slice(0, resultLimit);
+		}
 		return resultArray;
 	}
 }
