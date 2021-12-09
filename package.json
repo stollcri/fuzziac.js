@@ -1,6 +1,6 @@
 {
   "name": "@stollcri/fuzziac.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A utility for on-line approximate string matching",
   "main": "index.js",
   "directories": {
@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "chai": "^4.3.4",
-    "mocha": "^8.3.2"
+    "mocha": "^9.0.0"
   }
 }
