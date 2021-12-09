@@ -2,13 +2,6 @@
 
 A utility for on-line approximate string matching
 
-<!-- [START badges] -->
-[![NPM Version](https://img.shields.io/npm/v/fuzziac.svg)](https://www.npmjs.com/package/fuzziac)
-[![Node Requirement](https://img.shields.io/node/v/fuzziac.svg)](https://www.npmjs.com/package/fuzziac)
-[![License](https://img.shields.io/npm/l/fuzziac.svg)](https://github.com/skiplist-eng/fuzziac/blob/master/LICENSE)
-[![Number of Downloads](https://img.shields.io/npm/dm/fuzziac.svg)](https://www.npmjs.com/package/fuzziac) 
-<!-- [END badges] -->
-
 Fuzziac.js is Javascript class for on-line approximate string matching. It was originally intended for use with auto-complete, but it's really just a plain Javascript class, so use it as you see fit.
 
 This is started as a research project for an undergraduate algorithms class which I took way back in 2011. We had to complete a term project on an algorithm, and Dr. Duan made dynamic programming look cool, so I though I would look for an application of dynamic programming outside the realm of DNA sequencing.
