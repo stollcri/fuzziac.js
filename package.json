@@ -1,5 +1,5 @@
 {
-  "name": "fuzziac",
+  "name": "@stollcri/fuzziac.js",
   "version": "0.1.0",
   "description": "A utility for on-line approximate string matching",
   "main": "index.js",
@@ -12,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stollcri/fuzziac.js.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   },
   "keywords": [
     "fuzzy",
